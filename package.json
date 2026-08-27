@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js",
+    "start": "nodemon src/index.js",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test":"node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand",
     "prepare": "husky"
   },
   "keywords": [],
@@ -22,6 +22,8 @@
     "@eslint/js": "^10.0.1",
     "eslint": "^10.9.1",
     "globals": "^17.11.0",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
   }
 }
