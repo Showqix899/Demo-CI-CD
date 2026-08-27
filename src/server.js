@@ -15,7 +15,7 @@ app.get("/health", (req, res) => {
 
 
 app.get("/messi",(req,res)=>{
-    res.json({
+    res.status(200).json({
         message:"Messi is the goat"
     })
 })
