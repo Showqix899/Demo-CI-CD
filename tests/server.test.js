@@ -31,3 +31,14 @@ describe("GET /messi",()=>{
         })
     })
 })
+
+describe("GET /ronaldo",()=>{
+    test("should return messi is the goat", async()=>{
+        const response = await request(app).get("/ronaldo");
+
+        expect(response.statusCode).toBe(200);
+        expect(response.body).toEqual({
+            message:"Ronaldo is not the goat"
+        })
+    })
+})

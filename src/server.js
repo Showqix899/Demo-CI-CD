@@ -20,5 +20,11 @@ app.get("/messi",(req,res)=>{
     })
 })
 
+app.get("/ronaldo",(req,res)=>{
+    res.status(200).json({
+        message:"Ronaldo is not the goat"
+    })
+})
+
 
 export default app;
