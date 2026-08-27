@@ -14,5 +14,11 @@ app.get("/health", (req, res) => {
 });
 
 
+app.get("/messi",(req,res)=>{
+    res.json({
+        message:"Messi is the goat"
+    })
+})
+
 
 export default app;
